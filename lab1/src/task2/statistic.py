@@ -20,7 +20,7 @@ def dispersion(variation_series, expected_value):
 
 
 def median(variation_series, variation_length):
-    """Медиана"""
+    """Выборочная медиана"""
     if variation_length % 2 == 0:
         first_value = variation_series[variation_length // 2 - 1]
         second_value = variation_series[variation_length // 2]
@@ -39,6 +39,7 @@ def statistical_series(variation_series):
 
 
 def interval_series(variation_series, variation_length):
+    """Интервалы и частоты для построения гистограммы"""
     extreme_left = variation_series[0]
     extreme_right = variation_series[variation_length - 1]
     variation_size = extreme_right - extreme_left
