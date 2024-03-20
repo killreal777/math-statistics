@@ -17,7 +17,7 @@ def get_specie(line):
     return line[4]
 
 
-def get_data():
+def get_dictionary():
     """Словарь со списками суммарных площадей по видам"""
 
     # Чтение файла
